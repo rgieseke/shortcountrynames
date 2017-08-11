@@ -13,6 +13,7 @@ clean:
 	rm shortcountrynames/__init__.py
 
 publish-on-pypi:
+	-rm build dist
 	@status=$$(git status --porcelain); \
 	if test "x$${status}" = x; then \
 		python setup.py bdist_wheel --universal; \
