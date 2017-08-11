@@ -12,11 +12,9 @@ venv: requirements.txt
 clean:
 	rm shortcountrynames/__init__.py
 
-tag:
-	./scripts/create_tag.sh
-
 publish:
 	-rm -rf build dist
+	./scripts/create_tag.sh
 	@status=$$(git status --porcelain); \
 	if test "x$${status}" = x; then \
 		python setup.py bdist_wheel --universal; \
@@ -26,4 +24,4 @@ publish:
 		echo Working directory is dirty >&2; \
 	fi;
 
-PHONY: clean tag publish
+PHONY: clean publish
