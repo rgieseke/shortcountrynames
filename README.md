@@ -1,3 +1,5 @@
+[![PyPI](https://img.shields.io/pypi/v/shortcountrynames.svg)]()
+
 ## Data Package
 Data Package with two and three-letter country codes and short
 English country names based on the [country-codes](https://github.com/datasets/country-codes) Data Package with some
