@@ -255,5 +255,5 @@ names["ZWE"] = names["ZW"] = "Zimbabwe"
 names["ALA"] = names["AX"] = "Åland Islands"
 
 exports.to_name = function(code) {
-  return names[code]
+  return exports.names[code]
 }

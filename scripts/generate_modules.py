@@ -44,7 +44,7 @@ py_out += '''\n\ndef to_name(code):
 '''
 
 js_out += '''\nexports.to_name = function(code) {
-  return names[code]
+  return exports.names[code]
 }'''
 
 
