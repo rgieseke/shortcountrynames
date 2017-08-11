@@ -20,6 +20,11 @@
             "description": "Three letter code"
           },
           {
+            "name": "Shortcode",
+            "type": "string",
+            "description": "Two letter code"
+          },
+          {
             "name": "Name",
             "type": "string",
             "description": "Short (inoffical) country name"
@@ -31,6 +36,6 @@
   ],
   "name": "shortcountrynames",
   "title": "Short Country Names",
-  "description": "Data Package with three letter country codes and short English country names",
+  "description": "Data Package with two and three letter country codes and short English country names",
   "repository": "git://github.com/rgieseke/shortcountrynames.git"
 }
