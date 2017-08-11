@@ -1,7 +1,7 @@
 all: shortcountrynames/__init__.py
 
-shortcountrynames/__init__.py: shortcountrynames.csv generate_modules.py venv
-	./venv/bin/python generate_modules.py
+shortcountrynames/__init__.py: shortcountrynames.csv scripts/generate_modules.py venv
+	./venv/bin/python scripts/generate_modules.py
 
 venv: requirements.txt
 	[ -d ./venv ] || python3 -m venv venv

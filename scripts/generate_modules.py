@@ -1,4 +1,8 @@
+from pathlib import Path
 from pandas_datapackage_reader import read_datapackage
+
+
+root = Path(__file__).parents[1]
 
 df = read_datapackage(".")
 
@@ -44,8 +48,8 @@ js_out += '''\nexports.to_name = function(code) {
 }'''
 
 
-with(open("shortcountrynames/__init__.py", "w")) as f:
+with(open(str(root / "shortcountrynames/__init__.py"), "w")) as f:
     f.write(py_out)
 
-with(open("index.js", "w")) as f:
+with(open(str(root / "index.js"), "w")) as f:
     f.write(js_out)
