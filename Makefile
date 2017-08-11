@@ -12,7 +12,10 @@ venv: requirements.txt
 clean:
 	rm shortcountrynames/__init__.py
 
-publish-on-pypi:
+tag:
+	./scripts/create_tag.sh
+
+publish:
 	-rm -rf build dist
 	@status=$$(git status --porcelain); \
 	if test "x$${status}" = x; then \
