@@ -1,4 +1,5 @@
-[![PyPI](https://img.shields.io/pypi/v/shortcountrynames.svg)]()
+[![PyPI](https://img.shields.io/pypi/v/shortcountrynames.svg)](https://pypi.python.org/pypi/shortcountrynames/)
+[![npm](https://img.shields.io/npm/v/shortcountrynames.svg)](https://www.npmjs.com/package/shortcountrynames)
 
 ## Data Package
 Data Package with two and three-letter country codes and short
