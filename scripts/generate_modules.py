@@ -26,7 +26,7 @@ names = {}
 js_out = '''// Country Groups
 
 exports.names = {}
-
+var names = exports.names
 '''
 
 
@@ -44,7 +44,7 @@ py_out += '''\n\ndef to_name(code):
 '''
 
 js_out += '''\nexports.to_name = function(code) {
-  return exports.names[code]
+  return names[code]
 }'''
 
 

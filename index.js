@@ -1,7 +1,7 @@
 // Country Groups
 
 exports.names = {}
-
+var names = exports.names
 names["AFG"] = names["AF"] = "Afghanistan"
 names["ALB"] = names["AL"] = "Albania"
 names["DZA"] = names["DZ"] = "Algeria"
@@ -255,5 +255,5 @@ names["ZWE"] = names["ZW"] = "Zimbabwe"
 names["ALA"] = names["AX"] = "Åland Islands"
 
 exports.to_name = function(code) {
-  return exports.names[code]
+  return names[code]
 }
