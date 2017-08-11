@@ -1,4 +1,3 @@
-from pprint import pformat
 from pandas_datapackage_reader import read_datapackage
 
 df = read_datapackage(".")
@@ -6,20 +5,21 @@ df = read_datapackage(".")
 py_out = '''"""
 shortcountrynames
 -----------------
-
 """
 
 
-names = {
+names = {}
+
 '''
 
-py_out += " " + pformat(df["Name"].to_dict(), indent=4)[1:-1]
+for code, row in df.iterrows():
+    py_out += 'names["{}"] = names["{}"] = "{}"\n'.format(
+        code, row.Shortcode, row.Name)
 
-py_out += "\n}\n\n"
-py_out += '''def to_name(code):
-    """Return short name for three letter code `code`.
+py_out += '''\n\ndef to_name(code):
+    """Return short name for two or three letter code `code`.
 
-    Non-standard codes: EUU for European Union, XKX for Kosovo"""
+    Non-standard codes: EU and EUU for European Union, XK and XKX for Kosovo"""
     return names[code]
 '''
 
