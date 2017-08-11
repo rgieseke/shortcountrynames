@@ -40,7 +40,7 @@ var shortcountrynames = require("shortcountrynames")
 shortcountrynames.names["TEST"] = 'test'
 
 console.log(shortcountrynames.to_name("DEU")) // Germany
-console.log(shortcountrynames.to_name("TEST")) //. test
+console.log(shortcountrynames.to_name("TEST")) // test
 ```
 
 ## Notes
