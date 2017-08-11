@@ -12,11 +12,15 @@ See README.md and repository for details:
 
 from setuptools import setup
 
+import versioneer
+
+cmdclass = versioneer.get_cmdclass()
+
 
 setup(
     name='shortcountrynames',
-    version='0.1',
-    description='Maps from three letter country codes to short names',
+    version=versioneer.get_version(),
+    description='Maps from two or three letter country codes to short names',
     url='https://github.com/rgieseke/shortcountrynames',
     author='Robert Gieseke',
     author_email='robert.gieseke@pik-potsdam.de',
@@ -32,5 +36,6 @@ setup(
         'Programming Language :: Python :: 3.6'
     ],
     keywords=['country code'],
+    cmdclass=cmdclass,
     packages=['shortcountrynames']
 )
