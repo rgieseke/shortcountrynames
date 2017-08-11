@@ -37,7 +37,7 @@ npm install shortcountrynames
 
 Usage
 
-```
+```js
 var shortcountrynames = require("shortcountrynames")
 
 // Define custom codes
