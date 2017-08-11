@@ -50,5 +50,7 @@ console.log(shortcountrynames.to_name("TEST")) // test
 ## Notes
 
 Non-standard codes:
+
 `EUU` - European Union
+
 `XKX` - Kosovo
