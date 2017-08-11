@@ -1,10 +1,14 @@
 [![PyPI](https://img.shields.io/pypi/v/shortcountrynames.svg)](https://pypi.python.org/pypi/shortcountrynames/)
 [![npm](https://img.shields.io/npm/v/shortcountrynames.svg)](https://www.npmjs.com/package/shortcountrynames)
 
+“Do One Thing and Do It Well” - this package helps turning two or three letter
+codes into short English names.
+
 ## Data Package
-Data Package with two and three-letter country codes and short
-English country names based on the [country-codes](https://github.com/datasets/country-codes) Data Package with some
-changes to the choice of short names.
+[Data Package](http://frictionlessdata.io/), a simple
+[CSV file](shortcountrynames.csv), with two and three-letter country
+codes and short English country names based on the [country-codes](https://github.com/datasets/country-codes) Data Package with some
+changes and additions to the choice of short names.
 
 ## Python module
 
