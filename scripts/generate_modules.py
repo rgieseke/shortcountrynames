@@ -25,7 +25,7 @@ names = {}
 # JS module header
 js_out = '''// Country Groups
 
-names = {}
+exports.names = {}
 
 '''
 
@@ -40,7 +40,7 @@ py_out += '''\n\ndef to_name(code):
     """Return short name for two or three letter code `code`.
 
     Non-standard codes: EU and EUU for European Union, XK and XKX for Kosovo"""
-    return names[code]
+    return exports.names[code]
 '''
 
 js_out += '''\nexports.to_name = function(code) {

@@ -1,6 +1,6 @@
 // Country Groups
 
-names = {}
+exports.names = {}
 
 names["AFG"] = names["AF"] = "Afghanistan"
 names["ALB"] = names["AL"] = "Albania"
