@@ -21,6 +21,9 @@ publish:
 	if test "x$${status}" = x; then \
 		python setup.py bdist_wheel --universal; \
 		twine upload dist/*; \
+		npm publish; \
 	else \
 		echo Working directory is dirty >&2; \
 	fi;
+
+PHONY: clean tag publish
