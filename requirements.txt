@@ -1,1 +1,1 @@
-pandas-datapackage-reader
+pandas-datapackage-reader>=0.4.1
