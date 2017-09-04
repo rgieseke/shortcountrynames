@@ -40,7 +40,7 @@ py_out += '''\n\ndef to_name(code):
     """Return short name for two or three letter code `code`.
 
     Non-standard codes: EU and EUU for European Union, XK and XKX for Kosovo"""
-    return exports.names[code]
+    return names[code]
 '''
 
 js_out += '''\nexports.to_name = function(code) {
