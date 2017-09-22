@@ -1,7 +1,7 @@
 {
   "sources": [
     {
-      "name": "country-codes Data Package",
+      "title": "country-codes Data Package",
       "web": "https://github.com/datasets/country-codes"
     }
   ],
