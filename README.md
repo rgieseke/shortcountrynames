@@ -1,8 +1,10 @@
-[![PyPI](https://img.shields.io/pypi/v/shortcountrynames.svg)](https://pypi.python.org/pypi/shortcountrynames/)
+[![PyPI](https://img.shields.io/pypi/v/shortcountrynames.svg)](https://pypi.org/project/shortcountrynames/)
 [![npm](https://img.shields.io/npm/v/shortcountrynames.svg)](https://www.npmjs.com/package/shortcountrynames)
 
 “Do One Thing and Do It Well” - this package helps turning two or three letter
 codes into short English names.
+
+It is maintained by Robert Gieseke <robert.gieseke@pik-potsdam.de>
 
 ## Data Package
 [Data Package](http://frictionlessdata.io/), a simple
@@ -54,3 +56,7 @@ Non-standard codes:
 `EU`, `EUU` - European Union
 
 `XK`, `XKX` - Kosovo
+
+## License
+
+CC0
