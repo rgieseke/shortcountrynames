@@ -36,7 +36,7 @@
   ],
   "name": "shortcountrynames",
   "title": "Short Country Names",
-  "version": "0.6.0",
+  "version": "0.6.1",
   "description": "Data Package with two and three letter country codes and short English country names",
   "repository": "git://github.com/rgieseke/shortcountrynames.git"
 }
