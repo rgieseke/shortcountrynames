@@ -1,4 +1,4 @@
-// Country Groups
+// Short Country Names
 
 exports.names = {}
 var names = exports.names

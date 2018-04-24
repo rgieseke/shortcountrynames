@@ -23,7 +23,7 @@ names = {}
 '''
 
 # JS module header
-js_out = '''// Country Groups
+js_out = '''// Short Country Names
 
 exports.names = {}
 var names = exports.names
