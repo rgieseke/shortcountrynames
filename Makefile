@@ -17,8 +17,8 @@ publish:
 	./scripts/create_tag.sh
 	@status=$$(git status --porcelain); \
 	if test "x$${status}" = x; then \
-		python setup.py bdist_wheel --universal; \
-		twine upload dist/*; \
+		./venv/bin/python setup.py bdist_wheel --universal; \
+		./venv/bin/twine upload dist/*; \
 		npm publish; \
 	else \
 		echo Working directory is dirty >&2; \
