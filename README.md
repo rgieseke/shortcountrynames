@@ -40,13 +40,13 @@ npm install shortcountrynames
 Usage
 
 ```js
-var shortcountrynames = require("shortcountrynames")
+import {names, to_name} from 'shortcountrynames'
 
 // Define custom codes
-shortcountrynames.names["TEST"] = 'test'
+names["TEST"] = 'test'
 
-console.log(shortcountrynames.to_name("DEU")) // Germany
-console.log(shortcountrynames.to_name("TEST")) // test
+console.log(to_name("DEU")) // Germany
+console.log(to_name("TEST")) // test
 ```
 
 ## Notes
