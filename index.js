@@ -1,7 +1,6 @@
 // Short Country Names
 
-exports.names = {}
-var names = exports.names
+const names = {}
 names["AFG"] = names["AF"] = "Afghanistan"
 names["ALB"] = names["AL"] = "Albania"
 names["DZA"] = names["DZ"] = "Algeria"
@@ -255,6 +254,8 @@ names["ZMB"] = names["ZM"] = "Zambia"
 names["ZWE"] = names["ZW"] = "Zimbabwe"
 names["ALA"] = names["AX"] = "Åland Islands"
 
-exports.to_name = function(code) {
+const to_name = function(code) {
   return names[code]
 }
+
+export {names, to_name}

@@ -4,7 +4,7 @@
 “Do One Thing and Do It Well” - this package helps turning two or three letter
 codes into short English names.
 
-`shortcountrynames` is maintained by Robert Gieseke (<robert.gieseke@pik-potsdam.de>).
+`shortcountrynames` is maintained by Robert Gieseke (<rob.g@web.de>).
 
 ## Data Package
 [Data Package](http://frictionlessdata.io/), a simple

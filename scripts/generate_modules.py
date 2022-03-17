@@ -25,8 +25,7 @@ names = {}
 # JS module header
 js_out = '''// Short Country Names
 
-exports.names = {}
-var names = exports.names
+const names = {}
 '''
 
 
@@ -43,10 +42,12 @@ py_out += '''\n\ndef to_name(code):
     return names[code]
 '''
 
-js_out += '''\nexports.to_name = function(code) {
+js_out += '''\nconst to_name = function(code) {
   return names[code]
-}'''
+}
 
+export {names, to_name}
+'''
 
 with(open(str(root / "shortcountrynames/__init__.py"), "w")) as f:
     f.write(py_out)
