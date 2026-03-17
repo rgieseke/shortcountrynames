@@ -1,27 +1,14 @@
 all: shortcountrynames/__init__.py
 
-shortcountrynames/__init__.py: shortcountrynames.csv scripts/generate_modules.py venv
-	./venv/bin/python scripts/generate_modules.py
-
-venv: requirements.txt
-	[ -d ./venv ] || python3 -m venv venv
-	./venv/bin/pip install --upgrade pip
-	./venv/bin/pip install -Ur $<
-	touch venv
+shortcountrynames/__init__.py: shortcountrynames.csv scripts/generate_modules.py
+	uv run scripts/generate_modules.py
 
 clean:
 	rm shortcountrynames/__init__.py
-
-publish:
+	rm index.js
+	
+update-version:
 	-rm -rf build dist
 	./scripts/create_tag.sh
-	@status=$$(git status --porcelain); \
-	if test "x$${status}" = x; then \
-		./venv/bin/python setup.py bdist_wheel --universal; \
-		./venv/bin/twine upload dist/*; \
-		npm publish; \
-	else \
-		echo Working directory is dirty >&2; \
-	fi;
-
+	
 PHONY: clean publish

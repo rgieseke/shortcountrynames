@@ -1,0 +1,18 @@
+[project]
+name = "shortcountrynames"
+version = "0.12.1"
+readme = "README.md"
+description = 'Maps from two or three letter country codes to short names'
+requires-python = ">=3.13"
+dependencies = []
+authors = [{ name = 'Robert Gieseke', email = 'rob.g@web.de' }]
+license = 'CC0-1.0'
+keywords = ['country code']
+classifiers = [
+    "Intended Audience :: Developers",
+    "Operating System :: OS Independent",
+    'Programming Language :: Python :: 3',
+]
+
+[project.urls]
+Repository = 'https://github.com/rgieseke/shortcountrynames'

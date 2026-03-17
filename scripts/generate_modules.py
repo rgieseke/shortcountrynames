@@ -1,21 +1,28 @@
+# /// script
+# requires-python = ">=3.13"
+# dependencies = [
+#     "pandas>=3.0.1",
+# ]
+# ///
 from pathlib import Path
-from pandas_datapackage_reader import read_datapackage
 
+import pandas as pd
 
 root = Path(__file__).parents[1]
 
-df = read_datapackage(".")
+df = pd.read_csv(root / "shortcountrynames.csv", keep_default_na=False)
 
 # Python module header
 py_out = '''"""
 shortcountrynames
 -----------------
 
-from ._version import get_versions
-__version__ = get_versions()['version']
-del get_versions
 
 """
+
+from importlib.metadata import version
+
+__version__ = version("shortcountrynames")
 
 
 names = {}
@@ -23,15 +30,14 @@ names = {}
 '''
 
 # JS module header
-js_out = '''// Short Country Names
+js_out = """// Short Country Names
 
 const names = {}
-'''
+"""
 
 
-for code, row in df.iterrows():
-    line = 'names["{}"] = names["{}"] = "{}"\n'.format(
-        code, row.Shortcode, row.Name)
+for _, row in df.iterrows():
+    line = f'names["{row.Code}"] = names["{row.Shortcode}"] = "{row.Name}"\n'
     py_out += line
     js_out += line
 
@@ -42,15 +48,15 @@ py_out += '''\n\ndef to_name(code):
     return names[code]
 '''
 
-js_out += '''\nconst to_name = function(code) {
+js_out += """\nconst to_name = function(code) {
   return names[code]
 }
 
 export {names, to_name}
-'''
+"""
 
-with(open(str(root / "shortcountrynames/__init__.py"), "w")) as f:
+with open(str(root / "shortcountrynames/__init__.py"), "w") as f:
     f.write(py_out)
 
-with(open(str(root / "index.js"), "w")) as f:
+with open(str(root / "index.js"), "w") as f:
     f.write(js_out)

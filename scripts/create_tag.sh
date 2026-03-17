@@ -1,12 +1,5 @@
 #!/usr/bin/env bash
 
-sed="sed";
-uname=$(uname);
-case "$uname" in
-    (*Darwin*) sed='gsed'; ;;
-esac;
-
-
 if [[ "$(git status --porcelain)" ]]; then
   printf "Working directory not clean:\n\n"
   git status
@@ -19,9 +12,9 @@ else
   echo "Please enter next version (x.y.z):"
   read version
   echo "You entered: $version"
-  "$sed" -i -r "s/(\"version\": \").*(\")/\1$version\2/" datapackage.json
-  git add datapackage.json
-  git commit -m "Update version in datapackage.json"
+  uv version "$version"
+  git add pyproject.toml 
+  git commit -m "Update version"
   npm version "$version" -m "Update version to %s"
 fi
 
