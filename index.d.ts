@@ -1,6 +1,2 @@
-declare module shortcountrynames {
-  const to_name = function(code: string): string
-  const names = {}
-}
-
-export = shortcountrynames
+export function to_name(code: string): string;
+export const names: {};
