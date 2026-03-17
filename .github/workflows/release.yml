@@ -1,0 +1,37 @@
+name: "Publish"
+
+on:
+  push:
+    tags:
+      # Publish on any tag starting with a `v`, e.g., v0.1.0
+      - v*
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    environment:
+      name: pypi
+    permissions:
+      id-token: write
+      contents: read
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+      
+      # Python
+      - name: Install uv
+        uses: astral-sh/setup-uv@v7
+      - name: Install Python 3.14
+        run: uv python install 3.14
+      - name: Build
+        run: uv build
+      - name: Publish
+        run: uv publish
+
+      # Node
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          registry-url: 'https://registry.npmjs.org'
+      - run: npm run build --if-present
+      - run: npm publish
