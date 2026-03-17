@@ -55,6 +55,16 @@ Non-standard codes:
 
 `XK`, `XKX` - Kosovo
 
+## Releasing
+
+Run `make update-version` to update the Python and Node version and create a new tag. 
+
+Push to GitHub with 
+
+```
+git push origin main --tags
+```
+
 ## License
 
 CC0
