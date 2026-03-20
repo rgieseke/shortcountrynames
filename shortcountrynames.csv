@@ -1,5 +1,6 @@
 Code,Shortcode,Name
 AFG,AF,Afghanistan
+ALA,AX,Åland Islands
 ALB,AL,Albania
 DZA,DZ,Algeria
 ASM,AS,American Samoa
@@ -51,23 +52,24 @@ COL,CO,Colombia
 COM,KM,Comoros
 COK,CK,Cook Islands
 CRI,CR,Costa Rica
+CIV,CI,Côte d’Ivoire
 HRV,HR,Croatia
 CUB,CU,Cuba
 CUW,CW,Curaçao
 CYP,CY,Cyprus
 CZE,CZ,Czechia
-CIV,CI,Côte d’Ivoire
-COD,CD,DR Congo
 DNK,DK,Denmark
 DJI,DJ,Djibouti
 DMA,DM,Dominica
 DOM,DO,Dominican Republic
+COD,CD,DR Congo
 ECU,EC,Ecuador
 EGY,EG,Egypt
 SLV,SV,El Salvador
 GNQ,GQ,Equatorial Guinea
 ERI,ER,Eritrea
 EST,EE,Estonia
+SWZ,SZ,Eswatini
 ETH,ET,Ethiopia
 EUU,EU,European Union
 FLK,FK,Falkland Islands
@@ -128,7 +130,6 @@ LIE,LI,Liechtenstein
 LTU,LT,Lithuania
 LUX,LU,Luxembourg
 MAC,MO,Macau
-MKD,MK,North Macedonia
 MDG,MG,Madagascar
 MWI,MW,Malawi
 MYS,MY,Malaysia
@@ -162,8 +163,9 @@ NER,NE,Niger
 NGA,NG,Nigeria
 NIU,NU,Niue
 NFK,NF,Norfolk Island
-PRK,KP,North Korea
 MNP,MP,Northern Mariana Islands
+PRK,KP,North Korea
+MKD,MK,North Macedonia
 NOR,NO,Norway
 OMN,OM,Oman
 PAK,PK,Pakistan
@@ -180,12 +182,13 @@ PRT,PT,Portugal
 PRI,PR,Puerto Rico
 QAT,QA,Qatar
 COG,CG,Republic of the Congo
+REU,RE,Réunion
 ROU,RO,Romania
 RUS,RU,Russia
 RWA,RW,Rwanda
-REU,RE,Réunion
 WSM,WS,Samoa
 SMR,SM,San Marino
+STP,ST,São Tomé & Príncipe
 SAU,SA,Saudi Arabia
 SEN,SN,Senegal
 SRB,RS,Serbia
@@ -213,11 +216,9 @@ VCT,VC,St. Vincent & Grenadines
 SDN,SD,Sudan
 SUR,SR,Suriname
 SJM,SJ,Svalbard & Jan Mayen
-SWZ,SZ,Eswatini
 SWE,SE,Sweden
 CHE,CH,Switzerland
 SYR,SY,Syria
-STP,ST,São Tomé & Príncipe
 TWN,TW,Taiwan
 TJK,TJ,Tajikistan
 TZA,TZ,Tanzania
@@ -232,14 +233,14 @@ TUR,TR,Türkiye
 TKM,TM,Turkmenistan
 TCA,TC,Turks & Caicos Islands
 TUV,TV,Tuvalu
-UMI,UM,US Outlying Islands
-VIR,VI,US Virgin Islands
 UGA,UG,Uganda
 UKR,UA,Ukraine
 ARE,AE,United Arab Emirates
 GBR,GB,United Kingdom
-USA,US,USA
 URY,UY,Uruguay
+USA,US,USA
+UMI,UM,US Outlying Islands
+VIR,VI,US Virgin Islands
 UZB,UZ,Uzbekistan
 VUT,VU,Vanuatu
 VAT,VA,Vatican City
@@ -250,4 +251,3 @@ ESH,EH,Western Sahara
 YEM,YE,Yemen
 ZMB,ZM,Zambia
 ZWE,ZW,Zimbabwe
-ALA,AX,Åland Islands
