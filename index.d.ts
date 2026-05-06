@@ -1,2 +1,2 @@
 export function to_name(code: string): string;
-export const names: {};
+export const names: {[key: string]: string};
